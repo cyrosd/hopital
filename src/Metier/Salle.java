@@ -10,6 +10,11 @@ package Metier;
  * @author cyril_000
  */
 public class Salle {
-    int numero;
-    String batiment;
+    private int numero;
+    private String batiment;
+
+    public Salle(int numero, String batiment) {
+        this.numero = numero;
+        this.batiment = batiment;
+    }
 }

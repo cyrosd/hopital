@@ -10,9 +10,16 @@ package Metier;
  * @author cyril_000
  */
 public class Personne {
-    String nom;
-    String prenom;
-    int tel;
-    String adresse;
+    private String nom;
+    private String prenom;
+    private int tel;
+    private String adresse;
     //TODO constructeurs
+
+    public Personne(String nom, String prenom, int tel, String adresse) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.tel = tel;
+        this.adresse = adresse;
+    }
 }

@@ -10,5 +10,10 @@ package Metier;
  * @author cyril_000
  */
 public class Malade extends Personne{
-    String mutuelle;
+    private String mutuelle;
+
+    public Malade(String mutuelle, String nom, String prenom, int tel, String adresse) {
+        super(nom, prenom, tel, adresse);
+        this.mutuelle = mutuelle;
+    }
 }

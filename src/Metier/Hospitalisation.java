@@ -10,8 +10,15 @@ package Metier;
  * @author cyril_000
  */
 public class Hospitalisation {
-    int numlit;
-    Malade malade;
-    Service service;
-    Chambre chambre;
+    private int numlit;
+    private Malade malade;
+    private Service service;
+    private Chambre chambre;
+
+    public Hospitalisation(int numlit, Malade malade, Service service, Chambre chambre) {
+        this.numlit = numlit;
+        this.malade = malade;
+        this.service = service;
+        this.chambre = chambre;
+    }
 }

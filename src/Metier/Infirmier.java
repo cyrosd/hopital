@@ -10,7 +10,14 @@ package Metier;
  * @author cyril_000
  */
 public class Infirmier extends Employe {
-    Service service;
-    String rotation;
-    double salaire;
+    private Service service;
+    private String rotation;
+    private double salaire;
+
+    public Infirmier(Service service, String rotation, double salaire, int numero, String nom, String prenom, int tel, String adresse) {
+        super(numero, nom, prenom, tel, adresse);
+        this.service = service;
+        this.rotation = rotation;
+        this.salaire = salaire;
+    }
 }

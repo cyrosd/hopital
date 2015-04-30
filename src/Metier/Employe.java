@@ -10,5 +10,10 @@ package Metier;
  * @author cyril_000
  */
 public class Employe extends Personne{
-    int numero;
+    private int numero;
+
+    public Employe(int numero, String nom, String prenom, int tel, String adresse) {
+        super(nom, prenom, tel, adresse);
+        this.numero = numero;
+    }
 }

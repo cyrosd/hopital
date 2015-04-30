@@ -14,6 +14,13 @@ import java.sql.Date;
 public class Soigne {
     Docteur docteur;
     Malade malade;
+
+    public Soigne(Docteur docteur, Malade malade, Date date, Salle salle) {
+        this.docteur = docteur;
+        this.malade = malade;
+        this.date = date;
+        this.salle = salle;
+    }
     Date date;
     Salle salle;
 }

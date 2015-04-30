@@ -10,8 +10,16 @@ package Metier;
  * @author cyril_000
  */
 public class Medicament {
-    String nom;
-    String type;
-    int consoMax;
-    int stock;
+    private String nom;
+    private String type;
+    private int consoMax;
+    private int stock;
+
+    public Medicament(String nom, String type, int consoMax, int stock) {
+        this.nom = nom;
+        this.type = type;
+        this.consoMax = consoMax;
+        this.stock = stock;
+    }
+    
 }

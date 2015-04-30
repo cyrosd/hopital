@@ -10,5 +10,10 @@ package Metier;
  * @author cyril_000
  */
 public class Docteur extends Employe{
-    String specialite;
+
+    private String specialite;
+    public Docteur(String specialite, int numero, String nom, String prenom, int tel, String adresse) {
+        super(numero, nom, prenom, tel, adresse);
+        this.specialite = specialite;
+    }
 }

@@ -12,9 +12,16 @@ import java.sql.Date;
  * @author cyril_000
  */
 public class Examen {
-    Date date;
-    String type;
-    Malade malade;
-    Infirmier infirmier;
-    /*Salle salle;*/
+    private Date date;
+    private String type;
+    private Malade malade;
+    private Infirmier infirmier;
+    /*private Salle salle;*/
+
+    public Examen(Date date, String type, Malade malade, Infirmier infirmier) {
+        this.date = date;
+        this.type = type;
+        this.malade = malade;
+        this.infirmier = infirmier;
+    }
 }

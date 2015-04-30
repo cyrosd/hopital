@@ -10,7 +10,13 @@ package Metier;
  * @author cyril_000
  */
 public class Service {
-    String nom;
-    String batiment;
-    Docteur directeur;
+    private String nom;
+    private String batiment;
+    private Docteur directeur;
+
+    public Service(String nom, String batiment, Docteur directeur) {
+        this.nom = nom;
+        this.batiment = batiment;
+        this.directeur = directeur;
+    }
 }

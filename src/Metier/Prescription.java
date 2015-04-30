@@ -10,7 +10,13 @@ package Metier;
  * @author cyril_000
  */
 public class Prescription {
-    Malade malade;
-    Medicament medicament;
-    int dose;
+    private Malade malade;
+    private Medicament medicament;
+    private int dose;
+
+    public Prescription(Malade malade, Medicament medicament, int dose) {
+        this.malade = malade;
+        this.medicament = medicament;
+        this.dose = dose;
+    }
 }

@@ -10,7 +10,13 @@ package Metier;
  * @author cyril_000
  */
 public class Chambre /*extends Salle*/ {
-    Infirmier Surveillant;
-    int nbLit;
-    Service service;
+    private Infirmier Surveillant;
+    private int nbLit;
+    private Service service;
+
+    public Chambre(Infirmier Surveillant, int nbLit, Service service) {
+        this.Surveillant = Surveillant;
+        this.nbLit = nbLit;
+        this.service = service;
+    }
 }
