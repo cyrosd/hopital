@@ -5,10 +5,15 @@
  */
 package Metier;
 
+import java.sql.Date;
+
 /**
  *
  * @author cyril_000
  */
 public class Soigne {
-    
+    Docteur docteur;
+    Malade malade;
+    Date date;
+    Salle salle;
 }

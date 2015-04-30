@@ -10,5 +10,7 @@ package Metier;
  * @author cyril_000
  */
 public class Service {
-    
+    String nom;
+    String batiment;
+    Docteur directeur;
 }

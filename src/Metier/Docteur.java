@@ -9,6 +9,6 @@ package Metier;
  *
  * @author cyril_000
  */
-public class Docteur {
-    
+public class Docteur extends Employe{
+    String specialite;
 }

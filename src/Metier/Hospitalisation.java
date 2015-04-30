@@ -10,5 +10,8 @@ package Metier;
  * @author cyril_000
  */
 public class Hospitalisation {
-    
+    int numlit;
+    Malade malade;
+    Service service;
+    Chambre chambre;
 }

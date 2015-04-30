@@ -10,5 +10,6 @@ package Metier;
  * @author cyril_000
  */
 public class Salle {
-    
+    int numero;
+    String batiment;
 }

@@ -10,5 +10,8 @@ package Metier;
  * @author cyril_000
  */
 public class Medicament {
-    
+    String nom;
+    String type;
+    int consoMax;
+    int stock;
 }

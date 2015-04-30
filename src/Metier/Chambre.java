@@ -9,6 +9,8 @@ package Metier;
  *
  * @author cyril_000
  */
-public class Chambre {
-    
+public class Chambre /*extends Salle*/ {
+    Infirmier Surveillant;
+    int nbLit;
+    Service service;
 }

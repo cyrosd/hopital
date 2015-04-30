@@ -10,5 +10,7 @@ package Metier;
  * @author cyril_000
  */
 public class Prescription {
-    
+    Malade malade;
+    Medicament medicament;
+    int dose;
 }
