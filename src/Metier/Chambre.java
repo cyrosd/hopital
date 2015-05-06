@@ -9,20 +9,29 @@ package Metier;
  *
  * @author cyril_000
  */
-public class Chambre /*extends Salle*/ {
+public class Chambre extends Salle {
     
-    private Infirmier Surveillant;
+    private Infirmier surveillant;
     private int nbLit;
     private Service service;
 
-    public Chambre(Infirmier Surveillant, int nbLit, Service service) {
-        this.Surveillant = Surveillant;
+    public Chambre(int numero, String batiment, Infirmier surveillant, int nbLit, Service service) {
+        super(numero, batiment);
+        this.surveillant = surveillant;
         this.nbLit = nbLit;
         this.service = service;
     }
 
+    public void setSurveillant(Infirmier surveillant) {
+        this.surveillant = surveillant;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
     public Infirmier getSurveillant() {
-        return Surveillant;
+        return surveillant;
     }
 
     public int getNbLit() {
@@ -32,4 +41,5 @@ public class Chambre /*extends Salle*/ {
     public Service getService() {
         return service;
     }
+    
 }

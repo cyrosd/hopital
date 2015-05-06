@@ -25,6 +25,10 @@ public class Examen {
         this.infirmier = infirmier;
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
     public Date getDate() {
         return date;
     }

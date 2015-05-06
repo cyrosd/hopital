@@ -37,4 +37,12 @@ public class Hospitalisation {
     public Chambre getChambre() {
         return chambre;
     }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
+    public void setChambre(Chambre chambre) {
+        this.chambre = chambre;
+    }
 }

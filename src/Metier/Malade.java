@@ -20,5 +20,9 @@ public class Malade extends Personne{
     public String getMutuelle() {
         return mutuelle;
     }
+
+    public void setMutuelle(String mutuelle) {
+        this.mutuelle = mutuelle;
+    }
     
 }

@@ -31,4 +31,8 @@ public class Prescription {
     public int getDose() {
         return dose;
     }
+
+    public void setDose(int dose) {
+        this.dose = dose;
+    }
 }

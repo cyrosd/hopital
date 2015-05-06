@@ -31,5 +31,9 @@ public class Service {
     public Docteur getDirecteur() {
         return directeur;
     }
+
+    public void setDirecteur(Docteur directeur) {
+        this.directeur = directeur;
+    }
     
 }

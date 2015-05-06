@@ -38,5 +38,9 @@ public class Soigne {
     public Salle getSalle() {
         return salle;
     }
+
+    public void setSalle(Salle salle) {
+        this.salle = salle;
+    }
    
 }
