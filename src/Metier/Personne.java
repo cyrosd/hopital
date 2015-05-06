@@ -22,4 +22,21 @@ public class Personne {
         this.tel = tel;
         this.adresse = adresse;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public int getTel() {
+        return tel;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+    
 }

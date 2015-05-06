@@ -16,4 +16,9 @@ public class Malade extends Personne{
         super(nom, prenom, tel, adresse);
         this.mutuelle = mutuelle;
     }
+
+    public String getMutuelle() {
+        return mutuelle;
+    }
+    
 }

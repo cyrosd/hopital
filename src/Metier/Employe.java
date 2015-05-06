@@ -16,4 +16,8 @@ public class Employe extends Personne{
         super(nom, prenom, tel, adresse);
         this.numero = numero;
     }
+    
+     public int getNumero() {
+        return numero;
+    }
 }

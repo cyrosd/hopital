@@ -17,4 +17,13 @@ public class Salle {
         this.numero = numero;
         this.batiment = batiment;
     }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getBatiment() {
+        return batiment;
+    }
+    
 }

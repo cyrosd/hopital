@@ -14,13 +14,29 @@ import java.sql.Date;
 public class Soigne {
     Docteur docteur;
     Malade malade;
-
+    Date date;
+    Salle salle;
     public Soigne(Docteur docteur, Malade malade, Date date, Salle salle) {
         this.docteur = docteur;
         this.malade = malade;
         this.date = date;
         this.salle = salle;
     }
-    Date date;
-    Salle salle;
+
+    public Docteur getDocteur() {
+        return docteur;
+    }
+
+    public Malade getMalade() {
+        return malade;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public Salle getSalle() {
+        return salle;
+    }
+   
 }

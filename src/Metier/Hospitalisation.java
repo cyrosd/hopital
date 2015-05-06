@@ -21,4 +21,20 @@ public class Hospitalisation {
         this.service = service;
         this.chambre = chambre;
     }
+
+    public int getNumlit() {
+        return numlit;
+    }
+
+    public Malade getMalade() {
+        return malade;
+    }
+
+    public Service getService() {
+        return service;
+    }
+
+    public Chambre getChambre() {
+        return chambre;
+    }
 }

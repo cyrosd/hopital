@@ -24,4 +24,20 @@ public class Examen {
         this.malade = malade;
         this.infirmier = infirmier;
     }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Malade getMalade() {
+        return malade;
+    }
+
+    public Infirmier getInfirmier() {
+        return infirmier;
+    }
 }

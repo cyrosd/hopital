@@ -21,5 +21,21 @@ public class Medicament {
         this.consoMax = consoMax;
         this.stock = stock;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getConsoMax() {
+        return consoMax;
+    }
+
+    public int getStock() {
+        return stock;
+    }
     
 }
