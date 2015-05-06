@@ -9,12 +9,12 @@ package Metier;
  *
  * @author cyril_000
  */
-public class Personne {
+public abstract class Personne {
     private String nom;
     private String prenom;
     private int tel;
     private String adresse;
-    //TODO constructeurs
+  
 
     public Personne(String nom, String prenom, int tel, String adresse) {
         this.nom = nom;
@@ -22,4 +22,29 @@ public class Personne {
         this.tel = tel;
         this.adresse = adresse;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public int getTel() {
+        return tel;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setTel(int tel) {
+        this.tel = tel;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+    
 }

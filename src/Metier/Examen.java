@@ -24,4 +24,24 @@ public class Examen {
         this.malade = malade;
         this.infirmier = infirmier;
     }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public Malade getMalade() {
+        return malade;
+    }
+
+    public Infirmier getInfirmier() {
+        return infirmier;
+    }
 }

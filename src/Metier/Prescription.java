@@ -19,4 +19,20 @@ public class Prescription {
         this.medicament = medicament;
         this.dose = dose;
     }
+
+    public Malade getMalade() {
+        return malade;
+    }
+
+    public Medicament getMedicament() {
+        return medicament;
+    }
+
+    public int getDose() {
+        return dose;
+    }
+
+    public void setDose(int dose) {
+        this.dose = dose;
+    }
 }

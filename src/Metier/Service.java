@@ -19,4 +19,21 @@ public class Service {
         this.batiment = batiment;
         this.directeur = directeur;
     }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getBatiment() {
+        return batiment;
+    }
+
+    public Docteur getDirecteur() {
+        return directeur;
+    }
+
+    public void setDirecteur(Docteur directeur) {
+        this.directeur = directeur;
+    }
+    
 }

@@ -16,4 +16,8 @@ public class Docteur extends Employe{
         super(numero, nom, prenom, tel, adresse);
         this.specialite = specialite;
     }
+
+    public String getSpecialite() {
+        return specialite;
+    }
 }

@@ -20,4 +20,28 @@ public class Infirmier extends Employe {
         this.rotation = rotation;
         this.salaire = salaire;
     }
+
+    public Service getService() {
+        return service;
+    }
+
+    public String getRotation() {
+        return rotation;
+    }
+
+    public double getSalaire() {
+        return salaire;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
+    public void setRotation(String rotation) {
+        this.rotation = rotation;
+    }
+
+    public void setSalaire(double salaire) {
+        this.salaire = salaire;
+    }
 }

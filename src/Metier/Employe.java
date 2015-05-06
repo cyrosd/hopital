@@ -9,11 +9,15 @@ package Metier;
  *
  * @author cyril_000
  */
-public class Employe extends Personne{
+public abstract class Employe extends Personne{
     private int numero;
 
     public Employe(int numero, String nom, String prenom, int tel, String adresse) {
         super(nom, prenom, tel, adresse);
         this.numero = numero;
+    }
+    
+     public int getNumero() {
+        return numero;
     }
 }
