@@ -7,7 +7,6 @@ package projet_hopital;
 
 import java.util.ArrayList;
 import javax.swing.JScrollPane;
-import javax.swing.JTable;
 import Metier.Docteur;
 
 /**
@@ -17,7 +16,7 @@ import Metier.Docteur;
 public class TableauMedecin extends JScrollPane {
 
     public TableauMedecin() {
-        ArrayList<Docteur> tabmed= new ArrayList<Docteur>();
+        ArrayList<Docteur> tabmed= new ArrayList<>();
     // création de liste ;
     // création de liste 
         Object[][] donnee=new Docteur[tabmed.size()][5];
@@ -27,7 +26,6 @@ public class TableauMedecin extends JScrollPane {
              donnee[i][3]=tabmed.get(i).getAdresse();
              donnee[i][4]=tabmed.get(i).getTel();
              donnee[i][5]=tabmed.get(i).getSpecialite();
-             
         }
         /*JTable med= new JTable(tabmed.size(),5);
     for (int i=0; i<tabmed.size();i++){
@@ -38,6 +36,5 @@ public class TableauMedecin extends JScrollPane {
         med.editCellAt(i,4,tabmed.get(i).getSpecialite());
         med.editCellAt(i,5,tabmed.get(i).getTel());
     }*/
-    
-
+    }
 }

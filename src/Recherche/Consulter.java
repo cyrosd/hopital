@@ -15,7 +15,7 @@ public class Consulter {
         if(e.getSource() == bouton1)
         {
             new Medecin;
-            panel2.add();
+            panel2 = new TableauMedecin;
         }
     }
 }
