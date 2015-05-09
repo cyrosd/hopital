@@ -13,13 +13,13 @@ public class Malade {
     public void actionPerformed(ActionEvent e)
     {
         String mutuelleUser = fenetre.getTextField().getText();
-        String nomeUser = fenetre.getTextField().getText();
+        String nomUser = fenetre.getTextField().getText();
         String prenomUser = fenetre.getTextField().getText();
         String adresseUser = fenetre.getTextField().getText();
         String telUserString = fenetre.getTextField().getText();
         int telUser = Integer.parseInt(telUserString);
         
-        //tab = tableau de Malade
-        taab.addElement(Malade(mutuelleUser,nomUser,prenomUser,telUser,adresseUser));
+        Malade mal = new Malade(mutuelleUser,nomUser,prenomUser,telUser,adresseUser);
+        creer(mal);
     }
 }

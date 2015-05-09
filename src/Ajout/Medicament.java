@@ -19,7 +19,7 @@ public class Medicament {
         String stockUserString = fenetre.getTextField().getText();
         int stockUser = Integer.parseInt(stockUserString);
         
-        //tab = tableau de Medicament
-        tab.addElement(Medicament(nomUser,typeUser,consoMaxUser,stockMaxUser));
+        Medicament medoc = new Medicament(nomUser,typeUser,consoMaxUser,stockUser);
+        creer(medoc);
     }
 }

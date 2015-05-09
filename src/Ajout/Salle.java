@@ -16,7 +16,7 @@ public class Salle {
         String numeroUserString = fenetre.getTextField().getText();
         int numeroUser = Integer.parseInt(numeroUserString);
         
-        //tab = tableau de Salle
-        tab.addElement(Salle(numeroUser,batimentUser));
+        Salle sal = new Salle(numeroUser,batimentUser);
+        creer(sal);
     }
 }
