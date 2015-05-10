@@ -14,8 +14,8 @@ import javax.swing.JScrollPane;
  * @author Léa
  */
 public class TableauSoigne extends JScrollPane{
+    private ArrayList<Soigne> tabsoig= new ArrayList<>();
     public TableauSoigne() {
-        ArrayList<Soigne> tabsoig= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Soigne[tabsoig.size()][4];
          for (int i=0; i<tabsoig.size();i++){
@@ -24,5 +24,9 @@ public class TableauSoigne extends JScrollPane{
              donnee[i][2]=tabsoig.get(i).getDate();
              donnee[i][3]=tabsoig.get(i).getSalle(); 
         }
+    }
+    public ArrayList<Soigne> getTabsoig()
+    {
+        return(tabsoig);
     }
 }

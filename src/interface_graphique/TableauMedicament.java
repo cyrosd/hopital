@@ -13,8 +13,8 @@ import Metier.Medicament;
  * @author Léa
  */
 public class TableauMedicament extends JScrollPane{
+    private ArrayList<Medicament> tabmedoc= new ArrayList<>();
     public TableauMedicament() {
-        ArrayList<Medicament> tabmedoc= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Medicament[tabmedoc.size()][4];
          for (int i=0; i<tabmedoc.size();i++){
@@ -23,5 +23,9 @@ public class TableauMedicament extends JScrollPane{
              donnee[i][2]=tabmedoc.get(i).getConsoMax();
              donnee[i][3]=tabmedoc.get(i).getStock(); 
         }
+    }
+    public ArrayList<Medicament> getTabmedoc()
+    {
+        return(tabmedoc);
     }
 }

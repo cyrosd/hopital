@@ -14,9 +14,8 @@ import Metier.Docteur;
  * @author cyril_000
  */
 public class TableauMedecin extends JScrollPane {
-
+    private ArrayList<Docteur> tabmed= new ArrayList<>();
     public TableauMedecin() {
-        ArrayList<Docteur> tabmed= new ArrayList<>();
     // création de liste ;
     // création de liste 
         Object[][] donnee=new Docteur[tabmed.size()][5];
@@ -36,5 +35,9 @@ public class TableauMedecin extends JScrollPane {
         med.editCellAt(i,4,tabmed.get(i).getSpecialite());
         med.editCellAt(i,5,tabmed.get(i).getTel());
     }*/
+    }
+    public ArrayList<Docteur> getTabmed()
+    {
+        return(tabmed);
     }
 }

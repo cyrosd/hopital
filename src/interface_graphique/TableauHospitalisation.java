@@ -14,8 +14,8 @@ import Metier.Hospitalisation;
  * @author Léa
  */
 public class TableauHospitalisation extends JScrollPane{
+    private ArrayList<Hospitalisation> tabhospi= new ArrayList<>();
     public TableauHospitalisation() {
-        ArrayList<Hospitalisation> tabhospi= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Hospitalisation[tabhospi.size()][4];
          for (int i=0; i<tabhospi.size();i++){
@@ -24,5 +24,9 @@ public class TableauHospitalisation extends JScrollPane{
              donnee[i][2]=tabhospi.get(i).getService();
              donnee[i][3]=tabhospi.get(i).getChambre();  
         }
+    }
+    public ArrayList<Hospitalisation> getTabhospi()
+    {
+        return(tabhospi);
     }
 }

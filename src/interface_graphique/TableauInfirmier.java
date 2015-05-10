@@ -13,8 +13,8 @@ import Metier.Infirmier;
  * @author Léa
  */
 public class TableauInfirmier extends JScrollPane{
+    private ArrayList<Infirmier> tabinfirm= new ArrayList<>();
     public TableauInfirmier() {
-        ArrayList<Infirmier> tabinfirm= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Infirmier[tabinfirm.size()][7];
          for (int i=0; i<tabinfirm.size();i++){
@@ -26,5 +26,9 @@ public class TableauInfirmier extends JScrollPane{
              donnee[i][5]=tabinfirm.get(i).getPrenom(); 
              donnee[i][6]=tabinfirm.get(i).getAdresse(); 
         }
+    }
+    public ArrayList<Infirmier> getTabinfirm()
+    {
+        return(tabinfirm);
     }
 }

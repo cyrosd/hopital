@@ -14,8 +14,8 @@ import Metier.Examen;
  * @author Léa
  */
 public class TableauExamen extends JScrollPane{
+    private ArrayList<Examen> tabexam= new ArrayList<>();
     public TableauExamen() {
-        ArrayList<Examen> tabexam= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Examen[tabexam.size()][4];
          for (int i=0; i<tabexam.size();i++){
@@ -24,5 +24,9 @@ public class TableauExamen extends JScrollPane{
              donnee[i][2]=tabexam.get(i).getMalade();
              donnee[i][3]=tabexam.get(i).getInfirmier(); 
         }
+    }
+    public ArrayList<Examen> getTabexam()
+    {
+        return(tabexam);
     }
 }

@@ -25,7 +25,7 @@ public class TableauChambre extends JScrollPane {
              donnee[i][4]=tabcha.get(i).getService();   
         }
     }
-    public ArrayList getTabcha()
+    public ArrayList<Chambre> getTabcha()
     {
         return(tabcha);
     }

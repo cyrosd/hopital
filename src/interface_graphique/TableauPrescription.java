@@ -13,8 +13,8 @@ import Metier.Prescription;
  * @author Léa
  */
 public class TableauPrescription extends JScrollPane{
+    private ArrayList<Prescription> tabpres= new ArrayList<>();
     public TableauPrescription() {
-        ArrayList<Prescription> tabpres= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Prescription[tabpres.size()][3];
          for (int i=0; i<tabpres.size();i++){
@@ -22,5 +22,9 @@ public class TableauPrescription extends JScrollPane{
              donnee[i][2]=tabpres.get(i).getMedicament();
              donnee[i][3]=tabpres.get(i).getDose(); 
         }
+    }
+    public ArrayList<Prescription> getTabpres()
+    {
+        return(tabpres);
     }
 }
