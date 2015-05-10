@@ -10,7 +10,7 @@ import Metier.Chambre;
  *
  * @author Léa
  */
-public class Chambre {
+public class Chambre2 {
     public void actionPerformed(ActionEvent e)
     {
         String surveillantUser = fenetre.getTextField().getText();
@@ -18,7 +18,7 @@ public class Chambre {
         String nblitsUserString = fenetre.getTextField().getText();
         int nblitsUser = Integer.parseInt(nblitsUserString);
         
-        Chambre Cham = new Chambre(surveillantUser,nblitsUser,serviceUser);
+        //Chambre Cham =new Chambre()
         creer(Cham);
     }
 }

@@ -11,35 +11,35 @@ package Metier;
  */
 public class Chambre extends Salle {
     
-    private Infirmier surveillant;
+    private int numSurveillant;
     private int nbLit;
-    private Service service;
+    private int numService;
 
-    public Chambre(int numero, String batiment, Infirmier surveillant, int nbLit, Service service) {
+    public Chambre(int numero, String batiment, int surveillant, int nbLit, int service) {
         super(numero, batiment);
-        this.surveillant = surveillant;
+        this.numSurveillant = surveillant;
         this.nbLit = nbLit;
-        this.service = service;
+        this.numService = service;
     }
 
-    public void setSurveillant(Infirmier surveillant) {
-        this.surveillant = surveillant;
+    public void setSurveillant(int surveillant) {
+        this.numSurveillant = surveillant;
     }
 
-    public void setService(Service service) {
-        this.service = service;
+    public void setService(int service) {
+        this.numService = service;
     }
 
-    public Infirmier getSurveillant() {
-        return surveillant;
+    public int getSurveillant() {
+        return numSurveillant;
     }
 
     public int getNbLit() {
         return nbLit;
     }
 
-    public Service getService() {
-        return service;
+    public int getService() {
+        return numService;
     }
     
 }
