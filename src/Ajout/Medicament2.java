@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package Ajout;
+import Metier.Medicament;
 
 /**
  *
  * @author Léa
  */
-public class Medicament {
+public class Medicament2 {
     public void actionPerformed(ActionEvent e)
     {
         String nomUser = fenetre.getTextField().getText();

@@ -4,24 +4,23 @@
  * and open the template in the editor.
  */
 package Ajout;
+import Metier.Malade;
 
 /**
  *
  * @author Léa
  */
-public class Docteur {
-     public void actionPerformed(ActionEvent e)
-     {
-        String specialiteUser = fenetre.getTextField().getText();
+public class Malade2 {
+    public void actionPerformed(ActionEvent e)
+    {
+        String mutuelleUser = fenetre.getTextField().getText();
         String nomUser = fenetre.getTextField().getText();
         String prenomUser = fenetre.getTextField().getText();
         String adresseUser = fenetre.getTextField().getText();
-        String numeroUserString = fenetre.getTextField().getText();
-        int numeroUser = Integer.parseInt(numeroUserString);
         String telUserString = fenetre.getTextField().getText();
         int telUser = Integer.parseInt(telUserString);
-           
-        Docteur doc = new Docteur(specialiteUser,numeroUser,nomUser,prenomUser,telUser,adresseUser);
-        creer(doc);
-     }
+        
+        Malade mal = new Malade(mutuelleUser,nomUser,prenomUser,telUser,adresseUser);
+        creer(mal);
+    }
 }
