@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pkginterface;
-   
+  
 import  javax.swing.JPanel ;
 import  java.awt.* ;
 import java.awt.Image;

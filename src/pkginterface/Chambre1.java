@@ -18,7 +18,7 @@ import javax.swing.JComboBox;
  *
  * @author stassi
  */
-public class Chambre extends JFrame implements ActionListener {
+public class Chambre1 extends JFrame implements ActionListener {
     Panel panel;
     Panel pan;   
     Object[] elements =new Object[]{"Element1","Element2","Element3","Element4","Element5"};
@@ -27,15 +27,15 @@ public class Chambre extends JFrame implements ActionListener {
     JButton bouton = new JButton ("Valider");
       
     //constructeur
-    public Chambre (){
+    public Chambre1 (){
     //	Donne un titre à l’application 
            setTitle("CHAMBRE");
     //Donne une taille à notre fenêtre  
-        setSize(600,300);
+        setSize(500,500);
     //Centre la fenêtre sur l’écran 
         setLocationRelativeTo(null);
     //Donne la possiblité à l’utilisateur de redimensionner la fenêtre 
-        setResizable(true);
+        setResizable(false);
         //visibilité de l'écran 
         setVisible(true);
     //Ferme l’application lors du clic droit sur la croix 
@@ -51,7 +51,7 @@ public class Chambre extends JFrame implements ActionListener {
        
        
     //Donne une couleur de fond  
-        panel.setBackground(Color.blue);
+        panel.setBackground(Color.white);
         
         pan.setPreferredSize(new Dimension(400,400));
         getContentPane().add(panel);

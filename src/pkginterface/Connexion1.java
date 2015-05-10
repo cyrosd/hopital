@@ -14,46 +14,45 @@ import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 /**
  *
  * @author stassi
  */
-public class Connexion extends JFrame implements ActionListener {
-    
+public class Connexion1 extends JFrame implements ActionListener {
+    Panel panel;
+    Panel pan;
     JButton bouton1= new JButton ("Valider");
     JLabel login= new JLabel ("login");
     JLabel requete= new JLabel ("requete");
     JButton bouton2= new JButton ("Valider");
-    GroupLayout groupe = new GroupLayout(getContentPane());
+    JTextField zone1 = new JTextField("entrez votre identifiant");
+    JTextField zone2 = new JTextField ("entrez votre requête");
+    
     
     //constructeur
-    public Connexion (){
-        // pour les GroupLayout
-         super("Gestion des groupes");
+    public Connexion1 (){
+        
     //	Donne un titre à l’application 
            setTitle("CONNEXION");
     //Donne une taille à notre fenêtre  
-        setSize(200,200);
+        setSize(250,150);
     //Centre la fenêtre sur l’écran 
         setLocationRelativeTo(null);
     //Donne la possiblité à l’utilisateur de redimensionner la fenêtre 
-        setResizable(true);
+        setResizable(false);
         //visibilité de l'écran 
         setVisible(true);
     //Ferme l’application lors du clic droit sur la croix 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-       
-   //gestion des GroupLayout     
-          getContentPane().setLayout(groupe);
-      GroupLayout.SequentialGroup horzGroupe = groupe.createSequentialGroup();     
-      GroupLayout.ParallelGroup vertGroupe = groupe.createBaselineGroup(false, false);
-      horzGroupe.addGroup(groupe.createParallelGroup().addComponent(login).addComponent(requete));  
-      horzGroupe.addGroup(groupe.createParallelGroup().addComponent(bouton1).addComponent(bouton2));  
-      vertGroupe.addGroup(groupe.createSequentialGroup().addComponent(login).addComponent(requete));
-      vertGroupe.addGroup(groupe.createSequentialGroup().addComponent(bouton1).addComponent(bouton2));
-      groupe.setHorizontalGroup(horzGroupe);
-      groupe.setVerticalGroup(vertGroupe);      
+       // mise en page
+        
+        setLayout(new FlowLayout());
+        
+  add(login); add(zone1); add(bouton1);
+  add(requete); add(zone2); add(bouton2);
+          
          
      // ecoute des boutons
         bouton1.addActionListener(new ActionListener()

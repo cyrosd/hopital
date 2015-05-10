@@ -10,6 +10,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import static javafx.scene.paint.Color.color;
+import static javafx.scene.paint.Color.color;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
@@ -19,8 +21,8 @@ import javax.swing.JComboBox;
  *
  * @author stassi
  */
-public class Infirmier extends JFrame implements ActionListener {
-    Panel_image panel;
+public class Examen1 extends JFrame implements ActionListener {
+    Panel panel;
     Panel pan;   
     Object[] elements =new Object[]{"Element1","Element2","Element3","Element4","Element5"};
     JComboBox liste = new JComboBox (elements);
@@ -28,32 +30,31 @@ public class Infirmier extends JFrame implements ActionListener {
     JButton bouton = new JButton ("Valider");
       
     //constructeur
-    public Infirmier (){
+    public Examen1 (){
     //	Donne un titre à l’application 
-           setTitle("INFIRMIER");
+           setTitle("EXAMEN");
     //Donne une taille à notre fenêtre  
-        setSize(600,300);
+        setSize(500,520);
     //Centre la fenêtre sur l’écran 
         setLocationRelativeTo(null);
     //Donne la possiblité à l’utilisateur de redimensionner la fenêtre 
-        setResizable(true);
+        setResizable(false);
         //visibilité de l'écran 
         setVisible(true);
     //Ferme l’application lors du clic droit sur la croix 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
     // Instancie l’objet avec le constructeur JPanel()
-        panel = new Panel_image("c:\\Users\\stéphanie\\Documents\\dossier Assi stéphanie\\index.jpg");
+        panel = new Panel();
         pan = new Panel();
          zone1.setColumns(15);     
     //Donne une mise en page 
-        
        zone1.setHorizontalAlignment(JTextField.CENTER);
        bouton.setHorizontalAlignment(JButton.RIGHT);
        
        
     //Donne une couleur de fond  
-        
+        panel.setBackground(Color.white);
         
         pan.setPreferredSize(new Dimension(400,400));
         getContentPane().add(panel);

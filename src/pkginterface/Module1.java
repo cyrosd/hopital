@@ -23,7 +23,7 @@ super(nom_item);
 //La méthode actionPerformed : 
 public void actionPerformed(ActionEvent e){
           //dans cette méthode sera mise toutes les actions précises du module1
-     JFrame fen1= new Recherche();
+     JFrame fen1= new Recherche1();
      
 } 
 }

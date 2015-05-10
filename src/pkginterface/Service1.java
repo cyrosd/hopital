@@ -5,6 +5,7 @@
  */
 package pkginterface;
 
+
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,20 +20,20 @@ import javax.swing.JComboBox;
  *
  * @author stassi
  */
-public class Malade extends JFrame implements ActionListener {
-    Panel_image panel;
+public class Service1 extends JFrame implements ActionListener {
+    Panel panel;
     Panel pan;   
     Object[] elements =new Object[]{"Element1","Element2","Element3","Element4","Element5"};
     JComboBox liste = new JComboBox (elements);
     JTextField zone1= new JTextField ("entrez votre recherche:");
     JButton bouton = new JButton ("Valider");
-      	
+      
     //constructeur
-    public Malade (){
+    public Service1 (){
     //	Donne un titre à l’application 
-           setTitle("MALADE");
+           setTitle("SERVICE");
     //Donne une taille à notre fenêtre  
-        setSize(600,300);
+        setSize(580,600);
     //Centre la fenêtre sur l’écran 
         setLocationRelativeTo(null);
     //Donne la possiblité à l’utilisateur de redimensionner la fenêtre 
@@ -43,11 +44,11 @@ public class Malade extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
     // Instancie l’objet avec le constructeur JPanel()
-        panel = new Panel_image("c:\\Users\\stéphanie\\Documents\\dossier Assi stéphanie\\index.jpg");
+        panel = new Panel();
         pan = new Panel();
          zone1.setColumns(15);     
     //Donne une mise en page 
-        
+        panel.setBackground(Color.white);
        zone1.setHorizontalAlignment(JTextField.CENTER);
        bouton.setHorizontalAlignment(JButton.RIGHT);
        
@@ -99,6 +100,5 @@ public class Malade extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         zone1.getText();
     }
-    
 }
 

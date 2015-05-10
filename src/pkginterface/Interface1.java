@@ -14,7 +14,7 @@ import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
  
 
-public class Interface extends JFrame implements ActionListener {
+public class Interface1 extends JFrame implements ActionListener {
     //attributs
     Panel_image panel;
     Panel panel2;
@@ -25,7 +25,7 @@ public class Interface extends JFrame implements ActionListener {
     JLabel label = new JLabel("CENTRE HOSPITALIER");
     
     //constructeur
-    public Interface (){
+    public Interface1 (){
     //	Donne un titre à l’application 
             setTitle("Interface Graphique");
     //Donne une taille à notre fenêtre  
@@ -40,7 +40,7 @@ public class Interface extends JFrame implements ActionListener {
         setVisible(true);
         
     // Instancie l’objet avec le constructeur JPanel()
-        panel = new Panel_image("url.jpg");
+        panel = new Panel_image("c:\\Users\\stéphanie\\Documents\\dossier Assi stéphanie\\url.jpg");
         panel2= new Panel();
         
     //Donne une mise en page 

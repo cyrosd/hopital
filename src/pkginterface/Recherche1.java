@@ -17,7 +17,7 @@ import javax.swing.JFrame;
  *
  * @author stassi
  */
-public class Recherche extends JFrame implements ActionListener {
+public class Recherche1 extends JFrame implements ActionListener {
     Panel_image panel;
     JButton bouton1= new JButton ("MEDECIN");
     JButton bouton2= new JButton ("CHAMBRE");
@@ -32,11 +32,11 @@ public class Recherche extends JFrame implements ActionListener {
     JButton bouton11= new JButton ("MALADE");
     
     //constructeur
-    public Recherche (){
+    public Recherche1 (){
     //	Donne un titre à l’application 
            setTitle("RECHERCHE");
     //Donne une taille à notre fenêtre  
-        setSize(500,500);
+        setSize(500,520);
     //Centre la fenêtre sur l’écran 
         setLocationRelativeTo(null);
     //Donne la possiblité à l’utilisateur de redimensionner la fenêtre 
@@ -47,7 +47,7 @@ public class Recherche extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
     // Instancie l’objet avec le constructeur JPanel()
-        panel = new Panel_image("recherche.jpg");
+        panel = new Panel_image("c:\\Users\\stéphanie\\Documents\\dossier Assi stéphanie\\recherche.jpg");
               
     //Donne une mise en page 
         panel.setLayout(new FlowLayout()) ;
@@ -60,7 +60,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton1.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-            JFrame fen =new Medecin();
+            JFrame fen =new Medecin1();
          
     }
         }
@@ -69,7 +69,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton2.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-           JFrame fen1= new Chambre(); 
+           JFrame fen1= new Chambre1(); 
           
     }
         }
@@ -78,7 +78,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton3.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen2= new Examen(); 
+         JFrame fen2= new Examen1(); 
     }
         }
         );
@@ -86,7 +86,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton4.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen3= new Hospitalisation(); 
+         JFrame fen3= new Hospitalisation1(); 
     }
         }
         );
@@ -95,7 +95,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton5.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen4= new Infirmier(); 
+         JFrame fen4= new Infirmier1(); 
     }
         }
         );
@@ -103,7 +103,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton6.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen5= new Medicament(); 
+         JFrame fen5= new Medicament1(); 
     }
         }
         );
@@ -111,7 +111,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton7.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen6= new Prescription(); 
+         JFrame fen6= new Prescription1(); 
     }
         }
         );
@@ -119,7 +119,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton8.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen7= new Salle(); 
+         JFrame fen7= new Salle1(); 
     }
         }
         );
@@ -127,7 +127,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton9.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen8= new Service(); 
+         JFrame fen8= new Service1(); 
     }
         }
         );
@@ -135,7 +135,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton10.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen9= new Soigne(); 
+         JFrame fen9= new Soigne1(); 
     }
         }
         );
@@ -143,7 +143,7 @@ public class Recherche extends JFrame implements ActionListener {
         bouton11.addActionListener(new ActionListener()
         {
         public void actionPerformed(ActionEvent e) {
-         JFrame fen10= new Malade(); 
+         JFrame fen10= new Malade1(); 
     }
         }
         );
