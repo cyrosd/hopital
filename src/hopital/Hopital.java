@@ -7,7 +7,7 @@ package hopital;
 
 /**
  *
- * @author cyril_000
+ * @author Léa
  */
 public class Hopital {
 
