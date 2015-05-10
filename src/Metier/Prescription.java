@@ -10,23 +10,25 @@ package Metier;
  * @author cyril_000
  */
 public class Prescription {
-    private Malade malade;
-    private Medicament medicament;
+    private int noMalade;
+    private int codeMedicament;
     private int dose;
 
-    public Prescription(Malade malade, Medicament medicament, int dose) {
-        this.malade = malade;
-        this.medicament = medicament;
+    public Prescription(int malade, int medicament, int dose) {
+        this.noMalade = malade;
+        this.codeMedicament = medicament;
         this.dose = dose;
     }
 
-    public Malade getMalade() {
-        return malade;
+    public int getNoMalade() {
+        return noMalade;
     }
 
-    public Medicament getMedicament() {
-        return medicament;
+    public int getCodeMedicament() {
+        return codeMedicament;
     }
+
+    
 
     public int getDose() {
         return dose;

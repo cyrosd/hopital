@@ -10,12 +10,14 @@ package Metier;
  * @author cyril_000
  */
 public class Medicament {
+    private int code;
     private String nom;
     private String type;
     private int consoMax;
     private int stock;
 
-    public Medicament(String nom, String type, int consoMax, int stock) {
+    public Medicament(int code,String nom, String type, int consoMax, int stock) {
+        this.code=code;
         this.nom = nom;
         this.type = type;
         this.consoMax = consoMax;
@@ -24,6 +26,10 @@ public class Medicament {
 
     public String getNom() {
         return nom;
+    }
+
+    public int getCode() {
+        return code;
     }
 
     public String getType() {

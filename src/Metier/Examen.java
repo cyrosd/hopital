@@ -14,15 +14,15 @@ import java.sql.Date;
 public class Examen {
     private Date date;
     private String type;
-    private Malade malade;
-    private Infirmier infirmier;
+    private int noMalade;
+    private int noInfirmier;
     /*private Salle salle;*/
 
-    public Examen(Date date, String type, Malade malade, Infirmier infirmier) {
+    public Examen(Date date, String type, int malade, int infirmier) {
         this.date = date;
         this.type = type;
-        this.malade = malade;
-        this.infirmier = infirmier;
+        this.noMalade = malade;
+        this.noInfirmier = infirmier;
     }
 
     public void setType(String type) {
@@ -37,11 +37,11 @@ public class Examen {
         return type;
     }
 
-    public Malade getMalade() {
-        return malade;
+    public int getMalade() {
+        return noMalade;
     }
 
-    public Infirmier getInfirmier() {
-        return infirmier;
+    public int getInfirmier() {
+        return noInfirmier;
     }
 }

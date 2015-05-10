@@ -10,14 +10,19 @@ package Metier;
  * @author cyril_000
  */
 public class Service {
+    private int code;
     private String nom;
     private String batiment;
     private Docteur directeur;
 
-    public Service(String nom, String batiment, Docteur directeur) {
+    public Service(int code, String nom, String batiment, Docteur directeur) {
         this.nom = nom;
         this.batiment = batiment;
         this.directeur = directeur;
+    }
+
+    public int getCode() {
+        return code;
     }
 
     public String getNom() {

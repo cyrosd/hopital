@@ -11,38 +11,38 @@ package Metier;
  */
 public class Hospitalisation {
     private int numlit;
-    private Malade malade;
-    private Service service;
-    private Chambre chambre;
+    private int noMalade;
+    private int codeService;
+    private int noChambre;
 
-    public Hospitalisation(int numlit, Malade malade, Service service, Chambre chambre) {
+    public Hospitalisation(int numlit, int malade, int service, int chambre) {
         this.numlit = numlit;
-        this.malade = malade;
-        this.service = service;
-        this.chambre = chambre;
+        this.noMalade = malade;
+        this.codeService = service;
+        this.noChambre = chambre;
     }
 
     public int getNumlit() {
         return numlit;
     }
 
-    public Malade getMalade() {
-        return malade;
+    public int getMalade() {
+        return noMalade;
     }
 
-    public Service getService() {
-        return service;
+    public int getService() {
+        return codeService;
     }
 
-    public Chambre getChambre() {
-        return chambre;
+    public int getChambre() {
+        return noChambre;
     }
 
-    public void setService(Service service) {
-        this.service = service;
+    public void setService(int service) {
+        this.codeService = service;
     }
 
-    public void setChambre(Chambre chambre) {
-        this.chambre = chambre;
+    public void setChambre(int chambre) {
+        this.noChambre = chambre;
     }
 }

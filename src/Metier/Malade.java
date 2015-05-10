@@ -11,15 +11,22 @@ package Metier;
  */
 public class Malade extends Personne{
     private String mutuelle;
+    private int noMalade;
 
-    public Malade(String mutuelle, String nom, String prenom, int tel, String adresse) {
+    public Malade(String mutuelle,int noMalade, String nom, String prenom, int tel, String adresse) {
         super(nom, prenom, tel, adresse);
         this.mutuelle = mutuelle;
+        this.noMalade=noMalade;
     }
 
     public String getMutuelle() {
         return mutuelle;
     }
+
+    public int getNoMalade() {
+        return noMalade;
+    }
+    
 
     public void setMutuelle(String mutuelle) {
         this.mutuelle = mutuelle;

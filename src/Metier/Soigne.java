@@ -12,35 +12,38 @@ import java.sql.Date;
  * @author cyril_000
  */
 public class Soigne {
-    Docteur docteur;
-    Malade malade;
+    int noDocteur;
+    int noMalade;
     Date date;
-    Salle salle;
-    public Soigne(Docteur docteur, Malade malade, Date date, Salle salle) {
-        this.docteur = docteur;
-        this.malade = malade;
+    int noSalle;
+    public Soigne(int docteur, int malade, Date date, int salle) {
+        this.noDocteur = docteur;
+        this.noMalade = malade;
         this.date = date;
-        this.salle = salle;
+        this.noSalle = salle;
     }
 
-    public Docteur getDocteur() {
-        return docteur;
+    public int getNoDocteur() {
+        return noDocteur;
     }
 
-    public Malade getMalade() {
-        return malade;
+    public int getNoMalade() {
+        return noMalade;
     }
+
+    public int getNoSalle() {
+        return noSalle;
+    }
+
+   
 
     public Date getDate() {
         return date;
     }
 
-    public Salle getSalle() {
-        return salle;
-    }
 
-    public void setSalle(Salle salle) {
-        this.salle = salle;
+    public void setSalle(int salle) {
+        this.noSalle = salle;
     }
    
 }

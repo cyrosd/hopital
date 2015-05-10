@@ -10,19 +10,19 @@ package Metier;
  * @author cyril_000
  */
 public class Infirmier extends Employe {
-    private Service service;
+    private int noService;
     private String rotation;
     private double salaire;
 
-    public Infirmier(Service service, String rotation, double salaire, int numero, String nom, String prenom, int tel, String adresse) {
+    public Infirmier(int service, String rotation, double salaire, int numero, String nom, String prenom, int tel, String adresse) {
         super(numero, nom, prenom, tel, adresse);
-        this.service = service;
+        this.noService = service;
         this.rotation = rotation;
         this.salaire = salaire;
     }
 
-    public Service getService() {
-        return service;
+    public int getService() {
+        return noService;
     }
 
     public String getRotation() {
@@ -33,8 +33,8 @@ public class Infirmier extends Employe {
         return salaire;
     }
 
-    public void setService(Service service) {
-        this.service = service;
+    public void setService(int service) {
+        this.noService = service;
     }
 
     public void setRotation(String rotation) {
