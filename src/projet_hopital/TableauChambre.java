@@ -18,11 +18,11 @@ public class TableauChambre extends JScrollPane {
         //REmplissage de la liste
         Object[][] donnee=new Chambre[tabcha.size()][5];
          for (int i=0; i<tabcha.size();i++){
-             donnee[i][1]=tabcha.get(i).getNumero();
-             donnee[i][2]=tabcha.get(i).getBatiment();
-             donnee[i][3]=tabcha.get(i).getSurveillant();
-             donnee[i][4]=tabcha.get(i).getNbLit();
-             donnee[i][5]=tabcha.get(i).getService();   
+             donnee[i][0]=tabcha.get(i).getNumero();
+             donnee[i][1]=tabcha.get(i).getBatiment();
+             donnee[i][2]=tabcha.get(i).getSurveillant();
+             donnee[i][3]=tabcha.get(i).getNbLit();
+             donnee[i][4]=tabcha.get(i).getService();   
         }
     }
 }

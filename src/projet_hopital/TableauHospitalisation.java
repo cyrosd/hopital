@@ -19,10 +19,10 @@ public class TableauHospitalisation extends JScrollPane{
         //REmplissage de la liste
         Object[][] donnee=new Hospitalisation[tabhospi.size()][4];
          for (int i=0; i<tabhospi.size();i++){
-             donnee[i][1]=tabhospi.get(i).getNumlit();
-             donnee[i][2]=tabhospi.get(i).getMalade();
-             donnee[i][3]=tabhospi.get(i).getService();
-             donnee[i][4]=tabhospi.get(i).getChambre();  
+             donnee[i][0]=tabhospi.get(i).getNumlit();
+             donnee[i][1]=tabhospi.get(i).getMalade();
+             donnee[i][2]=tabhospi.get(i).getService();
+             donnee[i][3]=tabhospi.get(i).getChambre();  
         }
     }
 }

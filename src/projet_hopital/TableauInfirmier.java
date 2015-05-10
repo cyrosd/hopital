@@ -18,13 +18,13 @@ public class TableauInfirmier extends JScrollPane{
         //REmplissage de la liste
         Object[][] donnee=new Infirmier[tabinfirm.size()][7];
          for (int i=0; i<tabinfirm.size();i++){
-             donnee[i][1]=tabinfirm.get(i).getService();
-             donnee[i][2]=tabinfirm.get(i).getRotation();
-             donnee[i][3]=tabinfirm.get(i).getSalaire();
-             donnee[i][4]=tabinfirm.get(i).getNumero(); 
-             donnee[i][5]=tabinfirm.get(i).getNom(); 
-             donnee[i][6]=tabinfirm.get(i).getPrenom(); 
-             donnee[i][7]=tabinfirm.get(i).getAdresse(); 
+             donnee[i][0]=tabinfirm.get(i).getService();
+             donnee[i][1]=tabinfirm.get(i).getRotation();
+             donnee[i][2]=tabinfirm.get(i).getSalaire();
+             donnee[i][3]=tabinfirm.get(i).getNumero(); 
+             donnee[i][4]=tabinfirm.get(i).getNom(); 
+             donnee[i][5]=tabinfirm.get(i).getPrenom(); 
+             donnee[i][6]=tabinfirm.get(i).getAdresse(); 
         }
     }
 }

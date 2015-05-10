@@ -18,10 +18,10 @@ public class TableauMedicament extends JScrollPane{
         //REmplissage de la liste
         Object[][] donnee=new Medicament[tabmedoc.size()][4];
          for (int i=0; i<tabmedoc.size();i++){
-             donnee[i][1]=tabmedoc.get(i).getNom();
-             donnee[i][2]=tabmedoc.get(i).getType();
-             donnee[i][3]=tabmedoc.get(i).getConsoMax();
-             donnee[i][4]=tabmedoc.get(i).getStock(); 
+             donnee[i][0]=tabmedoc.get(i).getNom();
+             donnee[i][1]=tabmedoc.get(i).getType();
+             donnee[i][2]=tabmedoc.get(i).getConsoMax();
+             donnee[i][3]=tabmedoc.get(i).getStock(); 
         }
     }
 }

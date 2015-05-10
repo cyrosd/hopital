@@ -21,11 +21,11 @@ public class TableauMedecin extends JScrollPane {
     // création de liste 
         Object[][] donnee=new Docteur[tabmed.size()][5];
          for (int i=0; i<tabmed.size();i++){
-             donnee[i][1]=tabmed.get(i).getNom();
-             donnee[i][2]=tabmed.get(i).getPrenom();
-             donnee[i][3]=tabmed.get(i).getAdresse();
-             donnee[i][4]=tabmed.get(i).getTel();
-             donnee[i][5]=tabmed.get(i).getSpecialite();
+             donnee[i][0]=tabmed.get(i).getNom();
+             donnee[i][1]=tabmed.get(i).getPrenom();
+             donnee[i][2]=tabmed.get(i).getAdresse();
+             donnee[i][3]=tabmed.get(i).getTel();
+             donnee[i][4]=tabmed.get(i).getSpecialite();
         }
         /*JTable med= new JTable(tabmed.size(),5);
     for (int i=0; i<tabmed.size();i++){
