@@ -5,15 +5,20 @@
  */
 package interface_graphique;
 
+import Metier.Docteur;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JComboBox;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.table.TableModel;
 
 /**
  *
@@ -58,6 +63,11 @@ public class Medecin extends JFrame implements ActionListener {
         pan.setPreferredSize(new Dimension(400,400));
         getContentPane().add(panel);
         
+        //Affichage TableauMedecin
+        TableauMedecin tab = new TableauMedecin();
+        JTable tableau = new JTable((TableModel) tab);
+        JScrollPane jScrollPane1 = new JScrollPane(tableau);
+        jScrollPane1.setVisible(true);
         
      // ecoute des boutons
         zone1.addActionListener(this);
@@ -65,7 +75,126 @@ public class Medecin extends JFrame implements ActionListener {
         {
             public void actionPerformed(ActionEvent e) {
             
+         String choix = liste.getSelectedItem().toString();
          // switch case
+                if(choix == "Specialite")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        if(tab2.get(i).getSpecialite() != zone1.getText())
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
+                if(choix == "Numero")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        String numString = zone1.getText();
+                        int num = Integer.parseInt(numString);
+                        if(tab2.get(i).getNumero() != num)
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
+                if(choix == "Nom")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        if(tab2.get(i).getNom() != zone1.getText())
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
+                if(choix == "Prenom")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        if(tab2.get(i).getPrenom() != zone1.getText())
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
+                if(choix == "Telephone")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        String numString = zone1.getText();
+                        int num = Integer.parseInt(numString);
+                        if(tab2.get(i).getTel() != num)
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
+                if(choix == "Adresse")
+                {
+                    int i=0;
+                    tableau.revalidate();
+                    ArrayList<Docteur> tab2 = tab.getTabmed();
+                    while(tab2.get(i).getSpecialite() != null)
+                    {
+                        if(tab2.get(i).getAdresse() != zone1.getText())
+                        {
+                            tab2.remove(i);
+                        }
+                        i++;
+                    }
+                    jScrollPane1.updateUI();
+                    jScrollPane1.setVisible(false);
+                    JTable tableau2 = new JTable((TableModel) tab2);
+                    JScrollPane jScrollPane2 = new JScrollPane(tableau2);
+                    jScrollPane1.setViewportView(tableau2);
+                }
     }
         
         
@@ -77,7 +206,7 @@ public class Medecin extends JFrame implements ActionListener {
         bouton.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e) {
-            
+                jScrollPane1.setVisible(true);
          
     }
         
