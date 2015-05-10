@@ -13,8 +13,8 @@ import Metier.Chambre;
  * @author Léa
  */
 public class TableauChambre extends JScrollPane {
+    private ArrayList<Chambre> tabcha= new ArrayList<>();
     public TableauChambre() {
-        ArrayList<Chambre> tabcha= new ArrayList<>();
         //REmplissage de la liste
         Object[][] donnee=new Chambre[tabcha.size()][5];
          for (int i=0; i<tabcha.size();i++){
@@ -24,5 +24,9 @@ public class TableauChambre extends JScrollPane {
              donnee[i][3]=tabcha.get(i).getNbLit();
              donnee[i][4]=tabcha.get(i).getService();   
         }
+    }
+    public ArrayList getTabcha()
+    {
+        return(tabcha);
     }
 }
