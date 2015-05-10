@@ -12,16 +12,17 @@ import java.awt.event.ActionEvent;
 import  javax.swing.JLabel ;
 import  javax.swing.JButton ;
 import java.awt.event.ActionListener;
+import javax.swing.BorderFactory;
  
 
 public class Interface extends JFrame implements ActionListener {
     //attributs
-    Panel panel;
+    Panel_image panel;
     Panel panel2;
     JButton bouton1= new JButton (new Module1("RECHERCHE"));
-    JButton bouton2= new JButton (new Module2("REPORTING"));
+   // JButton bouton2= new JButton (new Module2("REPORTING"));
     JButton bouton3= new JButton (new Module3("CONNEXION"));
-    JButton bouton4= new JButton (new Module4("MISE A JOUR "));
+    //JButton bouton4= new JButton (new Module4("MISE A JOUR "));
     JLabel label = new JLabel("CENTRE HOSPITALIER");
     
     //constructeur
@@ -40,23 +41,26 @@ public class Interface extends JFrame implements ActionListener {
         setVisible(true);
         
     // Instancie l’objet avec le constructeur JPanel()
-        panel = new Panel();
+        panel = new Panel_image("url.jpg");
         panel2= new Panel();
         
     //Donne une mise en page 
-        panel.setLayout(new GridLayout(3,2,8,8)) ;
-         
+        panel.setLayout(new BorderLayout()) ;
+         bouton1. setBackground(Color.white);
+         bouton3. setBackground(Color.white); 
     //Donne une couleur de fond  
-        panel.setBackground(Color.white);
+        
         getContentPane().add(panel);
-         
+        
         // mise en page du JLabel
-        label.setPreferredSize(new Dimension(225,26));
-          label.setHorizontalAlignment(JLabel.CENTER);  
+        //label.setPreferredSize(new Dimension(50,50));
+          //label.setHorizontalAlignment(JLabel.CENTER);  
        
            
 //Ajout des objets composant au conteneur JPanel 
-    add(label,BorderLayout.NORTH); panel.add(bouton1); panel.add(bouton2); panel.add(bouton3);panel.add(bouton4);
+      //add(label,BorderLayout.NORTH);
+      panel.add(bouton1, BorderLayout.NORTH);  panel.add(bouton3,BorderLayout.SOUTH);//panel.add(bouton4);
+   //panel.add(bouton2);
     //mise en page des boutons
     
    
